@@ -1,4 +1,4 @@
-  const buttonSurprise = document.querySelector(".button-surprise");
+const buttonSurprise = document.querySelector(".button-surprise");
 const factText = document.getElementById("factText");
 
 buttonSurprise.addEventListener("click", async () => {
