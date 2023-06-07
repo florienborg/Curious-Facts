@@ -3,6 +3,8 @@
     --button: #5CB445;
     --borderColor: #a2738c;
     --black: #000;
+    --yellow:#E1E12B;
+
 }
 
 body{
@@ -71,7 +73,7 @@ h1{
     }
     
      .list-favorite {
-        background-color: #E1E12B;
+        background-color: var(--yellow);
         position: absolute;
         border-radius: 3rem;
         width: 550px;
@@ -85,6 +87,12 @@ h2{
     display: flex;
     justify-content: center;
     font-style: normal;
+}
+
+.img-icon_heart {
+    position: center;
+    right: 39px;
+    top: 715px;
 }
 
 
