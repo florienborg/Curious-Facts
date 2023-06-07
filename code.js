@@ -1,4 +1,4 @@
-const buttonSurprise = document.querySelector(".button-surprise");
+ const buttonSurprise = document.querySelector(".button-surprise");
 const factText = document.getElementById("factText");
 
 buttonSurprise.addEventListener("click", async () => {
@@ -9,4 +9,18 @@ buttonSurprise.addEventListener("click", async () => {
   } catch (error) {
     console.error(error);
   }
+}); 
+
+
+const emptyHeart = document.getElementById("empty-heart");
+const solidHeart = document.getElementById("solid-heart");
+
+emptyHeart.addEventListener("click", () => {
+  emptyHeart.style.display = "none";
+  solidHeart.style.display = "inline-block";
+});
+
+solidHeart.addEventListener("click", () => {
+  solidHeart.style.display = "none";
+  emptyHeart.style.display = "inline-block";
 });
