@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One & display=swap');
-:root{
+ :root{
     --button: #5CB445;
     --borderColor: #a2738c;
     --black: #000;
@@ -114,3 +114,12 @@ h2{
     font-style: normal;
 }
 
+ .favorite-heart {
+  
+ 
+    height: 100px;
+      
+     
+    overflow-y: scroll;
+    } 
+ 
