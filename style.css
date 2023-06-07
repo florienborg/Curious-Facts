@@ -9,12 +9,17 @@
     --var-background: #8CBFE6;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     position: relative;
     width: 90rem;
     height: 64rem;
     background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
     font-family: "Fjalla One", sans-serif;
+    background-repeat: no-repeat;
 }
 
 header{
@@ -43,6 +48,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 h1{
     display: flex;
@@ -51,6 +57,8 @@ h1{
     font-size: 50px;
     left: 38.5rem;
     top: 8.4rem;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
 }
 
 .img-banner{
@@ -58,6 +66,7 @@ h1{
     height: 23.5rem;
     left: calc(50% - 894px/2);
     top: 13.5rem;
+    /*max-width: 100%;*/
 }   
 
 .button-surprise {
@@ -76,7 +85,59 @@ h1{
 }
 
 @media (max-width: 768px) {
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+            overflow-x: hidden;
+            width: 100%;
+            height: auto;
+        }
 
+        header, .logo {
+            width: 12.5rem;
+            height: 10.5rem;
+            display: flex;
+            left: 23%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main, .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 40px;
+            margin-top: 15%;
+            text-align: center;
+        }
+
+        .img-banner {
+            width: 23rem;
+            height: 10rem;
+            margin-top: 3%;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-surprise {
+            width: 8rem;
+            height: 3rem;
+            font-size: 15px;
+            position: absolute;
+            top: 115%;
+          }
 }
 
 
