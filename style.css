@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2? family= Fjalla+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One & display=swap');
 :root{
     --button: #5CB445;
     --borderColor: #a2738c;
     --black: #000;
+    --yellow: #E1E12B;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    position: relative;
+   
     width: 1440px;
     height: 1024px;
-    
     background: linear-gradient(180deg, #8CBFE6 0%, rgba(140, 191, 230, 0) 100%);
+    background-repeat: no-repeat;
 }
 
 header{
+
     width: 195px;
     height: 168px;
     left: 41px;
@@ -29,21 +35,19 @@ top: 17px;
 }
 
 main{
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 
 }
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 h1{
    
    display: flex;
     justify-content: center;
+    font-family: 'Fjalla One';
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
@@ -70,8 +74,20 @@ h1{
    
     }
 
+    .list-favorite {
+        background-color: var(--yellow);
+        position: absolute;
+        border-radius: 3rem;
+        width: 550px;
+        height: 150px;
+        left: 472px;
+        top: 811px;
+       
+    }
 
-
-
-
+h2{
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
 
