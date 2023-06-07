@@ -85,6 +85,25 @@ h1{
     font-size: 25px;
 }
 
+.list-favorite {
+    background-color: var(--var-list);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    width: 550px;
+    height: 150px;
+    left: 472px;
+    top: 811px;
+   
+}
+
+h2 {
+display: flex;
+justify-content: center;
+}
+
+
 @media (max-width: 768px) {
     
     * {
@@ -141,9 +160,8 @@ h1{
           }
 }
 
-h2{
+h2 {
     display: flex;
     justify-content: center;
-    font-style: normal;
 }
 
