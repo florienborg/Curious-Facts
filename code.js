@@ -9,7 +9,7 @@ buttonSurprise.addEventListener("click", async () => {
   }  catch (error) {
     console.error(error);
   } 
-}); 
+});
 
 favoriteButton.addEventListener("click", () => {
     const favoriteFact = factText.textContent;
@@ -18,6 +18,7 @@ favoriteButton.addEventListener("click", () => {
     favoritesList.appendChild(listItem);
   });
 
+  
 /*
 const emptyHeart = document.getElementById("empty-heart");
 const solidHeart = document.getElementById("solid-heart");
