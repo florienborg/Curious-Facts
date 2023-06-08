@@ -1,106 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
- :root{
-    --button: #5CB445;
-    --borderColor: #a2738c;
-    --black: #000;
-    --yellow: #E1E12B;
+:root{
+    --var-button: #5CB445;
+    --var-borderColor: #EB79A4;
+    --var-black: #000;
+    --var-list: #E1E12B;
+    --var-background: #8CBFE6;
 }
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-body{
-    font-family: "fjalla one", sans-serif;
-    width: 100vh;
-    height: 100vh;
-    background: linear-gradient(180deg, #8CBFE6 0%, rgba(140, 191, 230, 0) 100%);
+body {
+    position: relative;
+    width: 90rem;
+    height: 1040px;
+    background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
+    font-family: "Fjalla One", sans-serif;
     background-repeat: no-repeat;
+    margin-right: 0;
 }
-
-header{
-
-    width: 195px;
-    height: 168px;
-    left: 41px;
-    top: 17px;
+header {
+    width: 12.2rem;
+    height: 10.5rem;
+    left: 2.5rem;
+    top: 1rem;
 }
-
 .logo {
     position: absolute;
-width: 195px;
-height: 168px;
-left: 41px;
-top: 17px;
+    width: 12.2rem;
+    height: 10.5rem;
+    left: 2.5rem;
+    top: 1rem;
 }
-
-main{
-
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
-h1{
-   
-   display: flex;
+.section{
+    display: flex;
     justify-content: center;
-    font-family: 'Fjalla One';
-    font-style: normal;
-    font-weight: 400;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
     font-size: 50px;
-    left: 616px;
-    top: 134px;
+    left: 38.5rem;
+    top: 8.4rem;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
 }
 .img-banner{
-   
-    width: 894px;
-    height: 377px;
+    width: 56rem;
+    height: 23.5rem;
     left: calc(50% - 894px/2);
-    top: 215px;
-}    
-.button-surprise{
-   
+    top: 13.5rem;
+}
+.button-surprise {
+    font-family: "Fjalla One", sans-serif;
     cursor: pointer;
-    background-color: var(--button);
-    bottom: 0%;
-    border-radius:  3rem;
+    background-color: var(--var-button);
+    border-radius: 3rem;
     width: 14rem;
     height: 5rem;
     border: none;
-    font-family: "fjalla one", sans-serif;
+    box-shadow: 0px 2px 4px var(--var-black);
+    font-weight: 600;
     font-size: 25px;
-    box-shadow: 0px 2px 4px black;
-   
-    }
-
-    .list-favorite {
-        background-color: var(--yellow);
-        position: absolute;
-        border-radius: 3rem;
-        width: 550px;
-        height: 150px;
-        left: 472px;
-        top: 811px;
-       
-    }
-
-h2{
+    bottom: 15%;
+}
+.list-favorite {
+    background-color: var(--var-list);
+    /*display: flex;
+    justify-content: center;*/
+    border-radius: 3rem;
+    width: 50rem;
+    height: 9.4rem;
+    position: absolute;
+    top: 70%;
+    margin: 5rem;
+}
+h2 {
     display: flex;
     justify-content: center;
-    font-style: normal;
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
- .favorite-heart {
-  
- 
+.favorite-heart {
     height: 100px;
-      
-     
     overflow-y: scroll;
-    } 
- 
+}
+    @media (max-width: 767px) {
+        body {
+            position: relative;
+            width: 393px;
+            height: 100vh;
+            background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
+            font-family: "Fjalla One", sans-serif;
+            background-repeat: no-repeat;
+        }
+    }
