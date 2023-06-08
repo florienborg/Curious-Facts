@@ -8,10 +8,17 @@ buttonSurprise.addEventListener("click", async () => {
     factText.textContent = data.text;
   }  catch (error) {
     console.error(error);
-  }
+  } 
 }); 
 
+favoriteButton.addEventListener("click", () => {
+    const favoriteFact = factText.textContent;
+    const listItem = document.createElement("li");
+    listItem.textContent = favoriteFact;
+    favoritesList.appendChild(listItem);
+  });
 
+/*
 const emptyHeart = document.getElementById("empty-heart");
 const solidHeart = document.getElementById("solid-heart");
 

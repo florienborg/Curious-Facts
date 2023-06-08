@@ -11,18 +11,15 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-body {
+body{
     position: relative;
     width: 90rem;
-    height: 100vh;
+    height: 64rem;
     background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
     font-family: "Fjalla One", sans-serif;
     background-repeat: no-repeat;
-    margin-right: 0;
 }
 
 header{
@@ -40,21 +37,20 @@ header{
     top: 1rem;
 }
 
-main {
+main{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-
 .section{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 h1{
     display: flex;
     justify-content: center;
@@ -67,10 +63,11 @@ h1{
 }
 
 .img-banner{
-    width: 56rem;
+   width: 56rem;
     height: 23.5rem;
     left: calc(50% - 894px/2);
     top: 13.5rem;
+    /*max-width: 100%;*/
 }   
 
 .button-surprise {
@@ -83,51 +80,33 @@ h1{
     border: none;
     box-shadow: 0px 2px 4px var(--var-black);
     font-weight: 600;
-    /*position: absolute;*/
+    position: absolute;
+    bottom: 20%;
     font-size: 25px;
-    bottom: 15%;
 }
-
 
 .list-favorite {
     background-color: var(--var-list);
-    /*display: flex;
-    justify-content: center;*/
-    border-radius: 3rem;
-    width: 50rem;
-    height: 9.4rem;
     position: absolute;
-    top: 70%;
-    margin: 5rem;
-}
-
-
-h2 {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    border-radius: 3rem;
+    width: 550px;
+    height: 150px;
+    left: 472px;
+    top: 811px;
+   
 }
 
-.favorite-heart {
-    height: 100px;
-    overflow-y: scroll;
-} 
+h2 {
+display: flex;
+justify-content: center;
+}
 
 
-@media (max-width: 767px) {
-    body {
-        position: relative;
-        width: 393px;
-        height: 100vh;
-        background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
-        font-family: "Fjalla One", sans-serif;
-        background-repeat: no-repeat;
-    }
-
+@media (max-width: 768px) {
     
-}
-  /*  * {
+    * {
         box-sizing: border-box;
     }
     
@@ -184,4 +163,5 @@ h2 {
 h2 {
     display: flex;
     justify-content: center;
-}*/
+}
+
