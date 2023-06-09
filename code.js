@@ -49,7 +49,7 @@ favoriteButton.addEventListener("click", () => {
     const favoriteFact = factText.textContent;
     const listItem = document.createElement("li");
     const deleteButton = document.createElement("button"); // Nuevo botón para eliminar
-    deleteButton.textContent = "Eliminar"; // Texto del botón de eliminar
+    deleteButton.textContent = "X"; // Texto del botón de eliminar
     listItem.textContent = favoriteFact;
     listItem.appendChild(deleteButton); // Agregar el botón de eliminar al elemento de la lista
     favoriteQuotes.appendChild(listItem);
