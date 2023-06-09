@@ -7,14 +7,14 @@
     --var-background: #8CBFE6;
 }
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 }
 body {
     position: relative;
-    width: 90rem;
-    height: 1040px;
+    width: 1440px;
+    height: 1024px;
     background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
     font-family: "Fjalla One", sans-serif;
     background-repeat: no-repeat;
@@ -61,6 +61,12 @@ h1{
     left: calc(50% - 894px/2);
     top: 13.5rem;
 }
+.fact-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 700px;
+    text-align: center;
+}
 .button-surprise {
     font-family: "Fjalla One", sans-serif;
     cursor: pointer;
@@ -84,10 +90,20 @@ h1{
     position: absolute;
     top: 70%;
     margin: 5rem;
-    overflow-y: scroll;
+   overflow-y: auto;
 }
+
 .hidden {
     display: none;
+   
+  }
+  .heart {
+    position: absolute;
+    width: 33px;
+    height: 29.37px;
+    left: 1116px;
+    top: 638px;
+    border-style: none;    
   }
 h2 {
     display: flex;
