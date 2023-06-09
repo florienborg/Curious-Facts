@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-
 :root{
     --var-button: #5CB445;
     --var-borderColor: #EB79A4;
@@ -8,27 +6,26 @@
     --var-list: #E1E12B;
     --var-background: #8CBFE6;
 }
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-body{
+body {
     position: relative;
     width: 90rem;
-    height: 64rem;
+    height: 1040px;
     background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
     font-family: "Fjalla One", sans-serif;
     background-repeat: no-repeat;
+    margin-right: 0;
 }
-
-header{
+header {
     width: 12.2rem;
     height: 10.5rem;
     left: 2.5rem;
     top: 1rem;
 }
-
 .logo {
     position: absolute;
     width: 12.2rem;
@@ -36,14 +33,11 @@ header{
     left: 2.5rem;
     top: 1rem;
 }
-
-main{
-
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .section{
     display: flex;
@@ -61,15 +55,12 @@ h1{
     font-family: "Fjalla One", sans-serif;
     text-align: center;
 }
-
 .img-banner{
-   width: 56rem;
+    width: 56rem;
     height: 23.5rem;
     left: calc(50% - 894px/2);
     top: 13.5rem;
-    /*max-width: 100%;*/
-}   
-
+}
 .button-surprise {
     font-family: "Fjalla One", sans-serif;
     cursor: pointer;
@@ -80,88 +71,46 @@ h1{
     border: none;
     box-shadow: 0px 2px 4px var(--var-black);
     font-weight: 600;
-    position: absolute;
-    bottom: 20%;
     font-size: 25px;
+    bottom: 15%;
 }
-
 .list-favorite {
     background-color: var(--var-list);
-    position: absolute;
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
     border-radius: 3rem;
-    width: 550px;
-    height: 150px;
-    left: 472px;
-    top: 811px;
-   
+    width: 50rem;
+    height: 9.4rem;
+    position: absolute;
+    top: 70%;
+    margin: 5rem;
+    overflow-y: scroll;
 }
-
-h2 {
-display: flex;
-justify-content: center;
-}
-
-
-@media (max-width: 768px) {
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-            overflow-x: hidden;
-            width: 100%;
-            height: auto;
-        }
-
-        header, .logo {
-            width: 12.5rem;
-            height: 10.5rem;
-            display: flex;
-            left: 23%;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        main, .section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1 {
-            display: flex;
-            justify-content: center;
-            font-weight: 400;
-            font-size: 40px;
-            margin-top: 15%;
-            text-align: center;
-        }
-
-        .img-banner {
-            width: 23rem;
-            height: 10rem;
-            margin-top: 3%;
-            max-width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .button-surprise {
-            width: 8rem;
-            height: 3rem;
-            font-size: 15px;
-            position: absolute;
-            top: 115%;
-          }
-}
-
+.hidden {
+    display: none;
+  }
 h2 {
     display: flex;
     justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.favorite-heart {
+    height: 100px;
+    
+}
+.favorite-quotes{
+padding: 2rem;
 }
 
+
+    @media (max-width: 767px) {
+        body {
+            position: relative;
+            width: 393px;
+            height: 100vh;
+            background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
+            font-family: "Fjalla One", sans-serif;
+            background-repeat: no-repeat;
+        }
+    }
