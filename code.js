@@ -37,13 +37,29 @@ buttonSurprise.addEventListener("click", async () => {
   }
 });
 
-favoriteButton.addEventListener("click", () => {
+/* favoriteButton.addEventListener("click", () => {
   const favoriteFact = factText.textContent;
   const listItem = document.createElement("li");
   listItem.textContent = favoriteFact;
   favoriteQuotes.appendChild(listItem);
-});
+}); */
 
+--
+favoriteButton.addEventListener("click", () => {
+    const favoriteFact = factText.textContent;
+    const listItem = document.createElement("li");
+    const deleteButton = document.createElement("button"); // Nuevo botón para eliminar
+    deleteButton.textContent = "Eliminar"; // Texto del botón de eliminar
+    listItem.textContent = favoriteFact;
+    listItem.appendChild(deleteButton); // Agregar el botón de eliminar al elemento de la lista
+    favoriteQuotes.appendChild(listItem);
+  
+    // Función para eliminar la frase favorita al hacer clic en el botón de eliminar
+    deleteButton.addEventListener("click", () => {
+      listItem.remove(); // Eliminar el elemento de la lista
+    });
+  });
+  
 
 
  
