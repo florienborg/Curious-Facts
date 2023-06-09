@@ -1,6 +1,5 @@
-const buttonSurprise = document.querySelector(".button-surprise");
+/*const buttonSurprise = document.querySelector(".button-surprise");
 const factText = document.getElementById("factText");
-
 buttonSurprise.addEventListener("click", async () => {
   try {
     const response = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random");
@@ -8,66 +7,48 @@ buttonSurprise.addEventListener("click", async () => {
     factText.textContent = data.text;
   }  catch (error) {
     console.error(error);
-  } 
-}); 
-
+  }
+});
 favoriteButton.addEventListener("click", () => {
     const favoriteFact = factText.textContent;
     const listItem = document.createElement("li");
     listItem.textContent = favoriteFact;
     favoritesList.appendChild(listItem);
   });
+  */
 
-/*
-const emptyHeart = document.getElementById("empty-heart");
-const solidHeart = document.getElementById("solid-heart");
+const buttonSurprise = document.querySelector(".button-surprise");
+const factText = document.getElementById("factText");
+const favoriteButton = document.getElementById("favoriteButton"); // Agrega el ID correcto para el botón del corazón
 
-emptyHeart.addEventListener("click", () => {
-  emptyHeart.style.display = "none";
-  solidHeart.style.display = "inline-block";
+favoriteButton.classList.add("hidden"); // Oculta el botón del corazón inicialmente
+buttonSurprise.addEventListener("click", async () => {
+  try {
+    const response = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random");
+    const data = await response.json();
+    factText.textContent = data.text;
+    favoriteButton.classList.remove("hidden"); // Muestra el botón del corazón después de hacer clic en "Surprise"
+  } catch (error) {
+    console.error(error);
+  }
 });
-
-solidHeart.addEventListener("click", () => {
-  solidHeart.style.display = "none";
-  emptyHeart.style.display = "inline-block";
+favoriteButton.addEventListener("click", () => {
+  const favoriteFact = factText.textContent;
+  const listItem = document.createElement("li");
+  const deleteButton = document.createElement("button"); // Nuevo botón para eliminar
+  deleteButton.textContent = "X"; // Texto del botón de eliminar
+  listItem.textContent = favoriteFact;
+  listItem.appendChild(deleteButton); // Agregar el botón de eliminar al elemento de la lista
+  favoriteQuotes.appendChild(listItem);
+  // Función para eliminar la frase favorita al hacer clic en el botón de eliminar
+  deleteButton.addEventListener("click", () => {
+    listItem.remove(); // Eliminar el elemento de la lista
+  });
 });
-
-// Obtener referencias a los elementos del DOM
-const heartImage = document.getElementById('heartImage');
-const heartList = document.getElementById('favorite-heart');
-
-// Agregar un evento de clic a la imagen del corazón
-heartImage.
-heartImage
-addEventListener('click', function() {
-  // Crear un nuevo elemento de lista
-  
- 
-const newHeart = document.createElement('li');
-  newHeart.
-  newHeart
-innerHTML = '<img src="corazon.png" alt="Corazón">';
-
-  
-
- 
-// Agregar el nuevo elemento de lista a la lista existente
-  heartList.
-  heart
-
- 
-appendChild(newHeart);
-
-  
-
- 
-
-
-// Desplazar el scroll al final de la lista
-  heartList.
-  heartList
-
- 
-scrollTop = heartList.scrollHeight;
+/* 
+  favoriteButton.addEventListener("click", () => {
+  const favoriteFact = factText.textContent;
+  const listItem = document.createElement("li");
+  listItem.textContent = favoriteFact;
+  favoriteQuotes.appendChild(listItem);
 }); */
-
