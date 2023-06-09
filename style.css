@@ -84,7 +84,11 @@ h1{
     position: absolute;
     top: 70%;
     margin: 5rem;
+    overflow-y: scroll;
 }
+.hidden {
+    display: none;
+  }
 h2 {
     display: flex;
     justify-content: center;
@@ -93,8 +97,13 @@ h2 {
 }
 .favorite-heart {
     height: 100px;
-    overflow-y: scroll;
+    
 }
+.favorite-quotes{
+padding: 2rem;
+}
+
+
     @media (max-width: 767px) {
         body {
             position: relative;
