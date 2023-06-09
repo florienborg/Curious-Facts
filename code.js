@@ -30,4 +30,4 @@ emptyHeart.addEventListener("click", () => {
 solidHeart.addEventListener("click", () => {
   solidHeart.style.display = "none";
   emptyHeart.style.display = "inline-block";
-});
+});*/
