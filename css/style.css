@@ -66,7 +66,7 @@ h1{
 .fact-text {
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 700px;
+    width: 44rem;
     text-align: center;
 }
 .button-surprise {
@@ -90,7 +90,7 @@ h1{
     width: 50rem;
     height: 9.4rem;
     position: absolute;
-    top: 70%;
+    top: 75%;
     margin: 5rem;
    overflow-y: auto;
 }
@@ -104,19 +104,19 @@ h1{
     width: 33px;
     height: 29.37px;
     left: 1116px;
-    top: 638px;
+    top: 650px;
     border-style: none;    
   }
-h2 {
+  
+  
+  h2 {
     display: flex;
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.favorite-heart {
-    height: 100px;
-    
-}
+
+
 .favorite-quotes{
 padding: 2rem;
 }
