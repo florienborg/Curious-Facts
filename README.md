@@ -59,6 +59,35 @@ Hemos planificado utilizando los marcos de trabajo Scrum y Kanban.
 
 Enlace a Trello: https://trello.com/b/iEwG1I3k/curious-facts-randomfacts
 
+
+
+**HISTORIAS DE USUARIO**
+
+-------------------------------------------------------------------------------
+
+**Como**: usuario 
+
+**Quiero**: un botón llamado SURPRISE ME 
+
+**Para**: que al hacer click salga un hecho curioso de manera aleatoria
+
+--------------------------------------------------------------------------------
+
+**Como**: usuario 
+
+**Quiero**: un botón en forma de corazón que agregue el hecho curioso a favoritos 
+
+**Para**: que se guarde en una lista
+
+---------------------------------------------------------------------------------
+
+**Como**: usuario 
+
+**Quiero**: hacer click en el botón de SURPRISE ME nuevamente 
+
+**Para**: que aparezca un hecho curioso diferente
+
+
 # Diseño y prototipo
 Para ello hemos utilizado Figma
 
