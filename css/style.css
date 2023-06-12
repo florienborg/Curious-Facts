@@ -120,15 +120,3 @@ h1{
 .favorite-quotes{
 padding: 2rem;
 }
-
-
-    @media (max-width: 767px) {
-        body {
-            position: relative;
-            width: 393px;
-            height: 100vh;
-            background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
-            font-family: "Fjalla One", sans-serif;
-            background-repeat: no-repeat;
-        }
-    }
