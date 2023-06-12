@@ -20,7 +20,7 @@ favoriteButton.addEventListener("click", () => {
 
  ------------------ */
 
- const buttonSurprise = document.querySelector(".button-surprise");
+const buttonSurprise = document.querySelector(".button-surprise");
 const factText = document.getElementById("factText");
 const favoriteButton = document.getElementById("favoriteButton"); // Agrega el ID correcto para el botón del corazón
 
