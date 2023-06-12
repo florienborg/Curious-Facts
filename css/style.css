@@ -7,9 +7,9 @@
     --var-background: #8CBFE6;
 }
 * {
-    /* box-sizing: border-box; */
+    
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 body {
     position: relative;
@@ -18,18 +18,18 @@ body {
     background: linear-gradient(180deg, var(--var-background) 0%, rgba(140, 191, 230, 0) 100%);
     font-family: "Fjalla One", sans-serif;
     background-repeat: no-repeat;
-    margin-right: 0;
+
 }
 header {
-    width: 12.2rem;
-    height: 10.5rem;
+    width: 1440px;
+    height: 197px;
     left: 2.5rem;
     top: 1rem;
 }
 .logo {
     position: absolute;
-    width: 12.2rem;
-    height: 10.5rem;
+    width: 195px;
+    height: 168px;
     left: 2.5rem;
     top: 1rem;
 }
@@ -38,6 +38,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 .section{
     display: flex;
@@ -60,6 +61,7 @@ h1{
     height: 23.5rem;
     left: calc(50% - 894px/2);
     top: 13.5rem;
+    
 }
 .fact-text {
     padding-top: 20px;
