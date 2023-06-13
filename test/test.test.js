@@ -1,12 +1,12 @@
 /*  const { test, expect } = require('jest'); */
 
-const { describe } = require('yargs');
+const { describe } = require('../test/test');
 const {
   displayFact,
   showFavoriteButton,
   hideFavoriteButton,
   addFavoriteFact,
-} = require('./code.js');
+} = require('./test.js');
 const { it } = require('node:test');
 const { default: expect } = require('expect');
 describe("displayFacts", ()=>{
